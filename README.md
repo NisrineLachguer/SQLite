@@ -1,3 +1,3 @@
 # SQLite
 
-I add the preview application on demo app folder , because network issues
+I add the preview application on demo app folder , because of network issues
