@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_person"
+            android:contentDescription="Photo étudiant"/>
+
+        <Button
+            android:id="@+id/btn_choose_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Choisir une photo"
+            android:contentDescription="Bouton pour choisir une photo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom :"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:hint="Entrez le nom"
+            android:padding="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prénom :"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:hint="Entrez le prénom"
+
+            android:padding="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date de naissance :"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/date_naissance"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:hint="Cliquez pour sélectionner"
+
+            android:focusable="false"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/bn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Valider"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID Étudiant :"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:inputType="number"
+            android:hint="Entrez l'ID étudiant"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/load"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Chercher"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/res"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_show_list"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Voir Table des Étudiants"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>
